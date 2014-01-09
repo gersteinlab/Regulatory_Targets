@@ -1,0 +1,523 @@
+==1164== Memcheck, a memory error detector
+==1164== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
+==1164== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==1164== Command: ./funseq2_DRM2Target -b /mnt/nas2/sklou/hmrf/yale_data/funseq2_data/funseq2.drm.15.test.bed -g /mnt/nas2/sklou/hmrf/yale_data/funseq2_data/funseq2.opt_g.gencode.v7.tss.gff -r /mnt/nas2/sklou/hmrf/yale_data/funseq2_data/funseq2.opt_r.gencode.v7.tss.rpm.tsv -s /mnt/nas2/sklou/hmrf/yale_data/sigtest/drmGeneCorrTest.bed.gz -d /mnt/nas2/sklou/hmrf/yale_data/bgzips/ -l /mnt/nas2/sklou/hmrf/yale_data/funseq2_data/funseq2.opt_l.drm.meta -o test.gff
+==1164== Parent PID: 1163
+==1164== 
+==1164== Use of uninitialised value of size 8
+==1164==    at 0x5FF0CB0: profil_counter (profil.c:41)
+==1164==    by 0x5F3B25F: ??? (in /lib/x86_64-linux-gnu/libc-2.17.so)
+==1164==    by 0x578247C: std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x5785115: std::ostream& std::ostream::_M_insert<long>(long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x41A627: gff::read() (gff.cpp:42)
+==1164==    by 0x40953F: main (funseq2_DRM2Target.cpp:296)
+==1164==  Uninitialised value was created by a stack allocation
+==1164==    at 0x574A220: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164== 
+==1164== Use of uninitialised value of size 8
+==1164==    at 0x5FF0CB0: profil_counter (profil.c:41)
+==1164==    by 0x5F3B25F: ??? (in /lib/x86_64-linux-gnu/libc-2.17.so)
+==1164==    by 0x575ED4F: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x578247C: std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x5785115: std::ostream& std::ostream::_M_insert<long>(long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x41A627: gff::read() (gff.cpp:42)
+==1164==    by 0x40953F: main (funseq2_DRM2Target.cpp:296)
+==1164==  Uninitialised value was created by a stack allocation
+==1164==    at 0x407400: ??? (in /mnt/nas2/sklou/hmrf/yale_data/funseq2_drm/funseq2_DRM2Target)
+==1164== 
+==1164== Use of uninitialised value of size 8
+==1164==    at 0x5FF0CB0: profil_counter (profil.c:41)
+==1164==    by 0x5F3B25F: ??? (in /lib/x86_64-linux-gnu/libc-2.17.so)
+==1164==    by 0x5777CB6: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x578221E: std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x578247C: std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x5785115: std::ostream& std::ostream::_M_insert<long>(long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x41A627: gff::read() (gff.cpp:42)
+==1164==    by 0x40953F: main (funseq2_DRM2Target.cpp:296)
+==1164==  Uninitialised value was created by a stack allocation
+==1164==    at 0x407400: ??? (in /mnt/nas2/sklou/hmrf/yale_data/funseq2_drm/funseq2_DRM2Target)
+==1164== 
+==1164== Use of uninitialised value of size 8
+==1164==    at 0x5FF0CB0: profil_counter (profil.c:41)
+==1164==    by 0x5F3B25F: ??? (in /lib/x86_64-linux-gnu/libc-2.17.so)
+==1164==    by 0x5777C8F: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x578247C: std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x5785115: std::ostream& std::ostream::_M_insert<long>(long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x41A627: gff::read() (gff.cpp:42)
+==1164==    by 0x40953F: main (funseq2_DRM2Target.cpp:296)
+==1164==  Uninitialised value was created by a stack allocation
+==1164==    at 0x407400: ??? (in /mnt/nas2/sklou/hmrf/yale_data/funseq2_drm/funseq2_DRM2Target)
+==1164== 
+==1164== Use of uninitialised value of size 8
+==1164==    at 0x5FF0CB0: profil_counter (profil.c:41)
+==1164==    by 0x5F3B25F: ??? (in /lib/x86_64-linux-gnu/libc-2.17.so)
+==1164==    by 0x578246F: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x5: ???
+==1164==  Uninitialised value was created by a stack allocation
+==1164==    at 0x407400: ??? (in /mnt/nas2/sklou/hmrf/yale_data/funseq2_drm/funseq2_DRM2Target)
+==1164== 
+==1164== Use of uninitialised value of size 8
+==1164==    at 0x5FF0CB0: profil_counter (profil.c:41)
+==1164==    by 0x5F3B25F: ??? (in /lib/x86_64-linux-gnu/libc-2.17.so)
+==1164==    by 0x57821DF: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x5: ???
+==1164==  Uninitialised value was created by a stack allocation
+==1164==    at 0x407400: ??? (in /mnt/nas2/sklou/hmrf/yale_data/funseq2_drm/funseq2_DRM2Target)
+==1164== 
+==1164== Use of uninitialised value of size 8
+==1164==    at 0x5FF0CB0: profil_counter (profil.c:41)
+==1164==    by 0x5F3B25F: ??? (in /lib/x86_64-linux-gnu/libc-2.17.so)
+==1164==    by 0x4096A1: main (funseq2_DRM2Target.cpp:317)
+==1164==  Uninitialised value was created by a stack allocation
+==1164==    at 0x40F814: std::pair<std::_Rb_tree_iterator<std::pair<std::string const, std::vector<double, std::allocator<double> > > >, bool> std::_Rb_tree<std::string, std::pair<std::string const, std::vector<double, std::allocator<double> > >, std::_Select1st<std::pair<std::string const, std::vector<double, std::allocator<double> > > >, std::less<std::string>, std::allocator<std::pair<std::string const, std::vector<double, std::allocator<double> > > > >::_M_insert_unique<std::pair<std::string, std::vector<double, std::allocator<double> > > >(std::pair<std::string, std::vector<double, std::allocator<double> > >&&) (stl_tree.h:1272)
+==1164== 
+==1164== Use of uninitialised value of size 8
+==1164==    at 0x5FF0CB0: profil_counter (profil.c:41)
+==1164==    by 0x5F3B25F: ??? (in /lib/x86_64-linux-gnu/libc-2.17.so)
+==1164==    by 0x5FF15EF: ??? (in /lib/x86_64-linux-gnu/libc-2.17.so)
+==1164==    by 0x40D46C: std::vector<double, std::allocator<double> >::~vector() (stl_vector.h:403)
+==1164==    by 0x40C752: std::pair<std::string, std::vector<double, std::allocator<double> > >::~pair() (stl_pair.h:88)
+==1164==    by 0x4096DE: main (funseq2_DRM2Target.cpp:317)
+==1164==  Uninitialised value was created by a stack allocation
+==1164==    at 0x40F814: std::pair<std::_Rb_tree_iterator<std::pair<std::string const, std::vector<double, std::allocator<double> > > >, bool> std::_Rb_tree<std::string, std::pair<std::string const, std::vector<double, std::allocator<double> > >, std::_Select1st<std::pair<std::string const, std::vector<double, std::allocator<double> > > >, std::less<std::string>, std::allocator<std::pair<std::string const, std::vector<double, std::allocator<double> > > > >::_M_insert_unique<std::pair<std::string, std::vector<double, std::allocator<double> > > >(std::pair<std::string, std::vector<double, std::allocator<double> > >&&) (stl_tree.h:1272)
+==1164== 
+==1164== Use of uninitialised value of size 8
+==1164==    at 0x5FF0CB0: profil_counter (profil.c:41)
+==1164==    by 0x5F3B25F: ??? (in /lib/x86_64-linux-gnu/libc-2.17.so)
+==1164==    by 0x40D46C: std::vector<double, std::allocator<double> >::~vector() (stl_vector.h:403)
+==1164==    by 0x40C752: std::pair<std::string, std::vector<double, std::allocator<double> > >::~pair() (stl_pair.h:88)
+==1164==    by 0x4096DE: main (funseq2_DRM2Target.cpp:317)
+==1164==  Uninitialised value was created by a stack allocation
+==1164==    at 0x40F814: std::pair<std::_Rb_tree_iterator<std::pair<std::string const, std::vector<double, std::allocator<double> > > >, bool> std::_Rb_tree<std::string, std::pair<std::string const, std::vector<double, std::allocator<double> > >, std::_Select1st<std::pair<std::string const, std::vector<double, std::allocator<double> > > >, std::less<std::string>, std::allocator<std::pair<std::string const, std::vector<double, std::allocator<double> > > > >::_M_insert_unique<std::pair<std::string, std::vector<double, std::allocator<double> > > >(std::pair<std::string, std::vector<double, std::allocator<double> > >&&) (stl_tree.h:1272)
+==1164== 
+==1164== Use of uninitialised value of size 8
+==1164==    at 0x5FF0CB0: profil_counter (profil.c:41)
+==1164==    by 0x5F3B25F: ??? (in /lib/x86_64-linux-gnu/libc-2.17.so)
+==1164==    by 0x5FF0B5F: ??? (in /lib/x86_64-linux-gnu/libc-2.17.so)
+==1164==    by 0x4096DE: main (funseq2_DRM2Target.cpp:317)
+==1164==  Uninitialised value was created by a stack allocation
+==1164==    at 0x40F814: std::pair<std::_Rb_tree_iterator<std::pair<std::string const, std::vector<double, std::allocator<double> > > >, bool> std::_Rb_tree<std::string, std::pair<std::string const, std::vector<double, std::allocator<double> > >, std::_Select1st<std::pair<std::string const, std::vector<double, std::allocator<double> > > >, std::less<std::string>, std::allocator<std::pair<std::string const, std::vector<double, std::allocator<double> > > > >::_M_insert_unique<std::pair<std::string, std::vector<double, std::allocator<double> > > >(std::pair<std::string, std::vector<double, std::allocator<double> > >&&) (stl_tree.h:1272)
+==1164== 
+==1164== Use of uninitialised value of size 8
+==1164==    at 0x5FF0CB0: profil_counter (profil.c:41)
+==1164==    by 0x5F3B25F: ??? (in /lib/x86_64-linux-gnu/libc-2.17.so)
+==1164==    by 0x5FF15EF: ??? (in /lib/x86_64-linux-gnu/libc-2.17.so)
+==1164==    by 0x4096DE: main (funseq2_DRM2Target.cpp:317)
+==1164==  Uninitialised value was created by a stack allocation
+==1164==    at 0x40F814: std::pair<std::_Rb_tree_iterator<std::pair<std::string const, std::vector<double, std::allocator<double> > > >, bool> std::_Rb_tree<std::string, std::pair<std::string const, std::vector<double, std::allocator<double> > >, std::_Select1st<std::pair<std::string const, std::vector<double, std::allocator<double> > > >, std::less<std::string>, std::allocator<std::pair<std::string const, std::vector<double, std::allocator<double> > > > >::_M_insert_unique<std::pair<std::string, std::vector<double, std::allocator<double> > > >(std::pair<std::string, std::vector<double, std::allocator<double> > >&&) (stl_tree.h:1272)
+==1164== 
+==1164== Use of uninitialised value of size 8
+==1164==    at 0x5FF0CB0: profil_counter (profil.c:41)
+==1164==    by 0x5F3B25F: ??? (in /lib/x86_64-linux-gnu/libc-2.17.so)
+==1164==    by 0x5FF0B5F: ??? (in /lib/x86_64-linux-gnu/libc-2.17.so)
+==1164==    by 0x40C752: std::pair<std::string, std::vector<double, std::allocator<double> > >::~pair() (stl_pair.h:88)
+==1164==    by 0x4096DE: main (funseq2_DRM2Target.cpp:317)
+==1164==  Uninitialised value was created by a stack allocation
+==1164==    at 0x40F814: std::pair<std::_Rb_tree_iterator<std::pair<std::string const, std::vector<double, std::allocator<double> > > >, bool> std::_Rb_tree<std::string, std::pair<std::string const, std::vector<double, std::allocator<double> > >, std::_Select1st<std::pair<std::string const, std::vector<double, std::allocator<double> > > >, std::less<std::string>, std::allocator<std::pair<std::string const, std::vector<double, std::allocator<double> > > > >::_M_insert_unique<std::pair<std::string, std::vector<double, std::allocator<double> > > >(std::pair<std::string, std::vector<double, std::allocator<double> > >&&) (stl_tree.h:1272)
+==1164== 
+==1164== Use of uninitialised value of size 8
+==1164==    at 0x5FF0CB0: profil_counter (profil.c:41)
+==1164==    by 0x5F3B25F: ??? (in /lib/x86_64-linux-gnu/libc-2.17.so)
+==1164==    by 0x40C73E: std::pair<std::string, std::vector<double, std::allocator<double> > >::~pair() (stl_pair.h:88)
+==1164==    by 0x4096DE: main (funseq2_DRM2Target.cpp:317)
+==1164==  Uninitialised value was created by a stack allocation
+==1164==    at 0x40F814: std::pair<std::_Rb_tree_iterator<std::pair<std::string const, std::vector<double, std::allocator<double> > > >, bool> std::_Rb_tree<std::string, std::pair<std::string const, std::vector<double, std::allocator<double> > >, std::_Select1st<std::pair<std::string const, std::vector<double, std::allocator<double> > > >, std::less<std::string>, std::allocator<std::pair<std::string const, std::vector<double, std::allocator<double> > > > >::_M_insert_unique<std::pair<std::string, std::vector<double, std::allocator<double> > > >(std::pair<std::string, std::vector<double, std::allocator<double> > >&&) (stl_tree.h:1272)
+==1164== 
+==1164== Conditional jump or move depends on uninitialised value(s)
+==1164==    at 0x4C2D54C: strcmp (mc_replace_strmem.c:725)
+==1164==    by 0x41E1FF: getVM() (vmstat.cpp:56)
+==1164==    by 0x40A096: main (funseq2_DRM2Target.cpp:395)
+==1164==  Uninitialised value was created by a stack allocation
+==1164==    at 0x41DEAF: getVM() (vmstat.cpp:18)
+==1164== 
+==1164== Conditional jump or move depends on uninitialised value(s)
+==1164==    at 0x41E202: getVM() (vmstat.cpp:53)
+==1164==    by 0x40A096: main (funseq2_DRM2Target.cpp:395)
+==1164==  Uninitialised value was created by a stack allocation
+==1164==    at 0x41DEAF: getVM() (vmstat.cpp:18)
+==1164== 
+==1164== Conditional jump or move depends on uninitialised value(s)
+==1164==    at 0x4C2D54C: strcmp (mc_replace_strmem.c:725)
+==1164==    by 0x41E1FF: getVM() (vmstat.cpp:56)
+==1164==    by 0x40A32A: main (funseq2_DRM2Target.cpp:411)
+==1164==  Uninitialised value was created by a stack allocation
+==1164==    at 0x41DEAF: getVM() (vmstat.cpp:18)
+==1164== 
+==1164== Conditional jump or move depends on uninitialised value(s)
+==1164==    at 0x41E202: getVM() (vmstat.cpp:53)
+==1164==    by 0x40A32A: main (funseq2_DRM2Target.cpp:411)
+==1164==  Uninitialised value was created by a stack allocation
+==1164==    at 0x41DEAF: getVM() (vmstat.cpp:18)
+==1164== 
+==1164== Conditional jump or move depends on uninitialised value(s)
+==1164==    at 0x4C2D54C: strcmp (mc_replace_strmem.c:725)
+==1164==    by 0x41E1FF: getVM() (vmstat.cpp:56)
+==1164==    by 0x40BBC1: main (funseq2_DRM2Target.cpp:557)
+==1164==  Uninitialised value was created by a stack allocation
+==1164==    at 0x41DEAF: getVM() (vmstat.cpp:18)
+==1164== 
+==1164== Conditional jump or move depends on uninitialised value(s)
+==1164==    at 0x41E202: getVM() (vmstat.cpp:53)
+==1164==    by 0x40BBC1: main (funseq2_DRM2Target.cpp:557)
+==1164==  Uninitialised value was created by a stack allocation
+==1164==    at 0x41DEAF: getVM() (vmstat.cpp:18)
+==1164== 
+==1164== 
+==1164== HEAP SUMMARY:
+==1164==     in use at exit: 18,809,352 bytes in 276,452 blocks
+==1164==   total heap usage: 27,316,419 allocs, 27,039,967 frees, 3,703,197,042 bytes allocated
+==1164== 
+==1164== 12 bytes in 3 blocks are indirectly lost in loss record 1 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x414154: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:94)
+==1164==    by 0x4111E1: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /mnt/nas2/sklou/hmrf/yale_data/funseq2_drm/funseq2_DRM2Target)
+==1164==    by 0x40E3BE: void std::vector<int, std::allocator<int> >::_M_emplace_back_aux<int const&>(int const&) (vector.tcc:402)
+==1164==    by 0x40CD7B: std::vector<int, std::allocator<int> >::push_back(int const&) (stl_vector.h:891)
+==1164==    by 0x408153: updateGZInfo(std::map<std::string, GZInfo*, std::less<std::string>, std::allocator<std::pair<std::string const, GZInfo*> > >&, std::string, int, std::string) (funseq2_DRM2Target.cpp:71)
+==1164==    by 0x4099AC: main (funseq2_DRM2Target.cpp:341)
+==1164== 
+==1164== 24 bytes in 3 blocks are indirectly lost in loss record 2 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x414154: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:94)
+==1164==    by 0x4111E1: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /mnt/nas2/sklou/hmrf/yale_data/funseq2_drm/funseq2_DRM2Target)
+==1164==    by 0x40E3BE: void std::vector<int, std::allocator<int> >::_M_emplace_back_aux<int const&>(int const&) (vector.tcc:402)
+==1164==    by 0x40CD7B: std::vector<int, std::allocator<int> >::push_back(int const&) (stl_vector.h:891)
+==1164==    by 0x4080D2: updateGZInfo(std::map<std::string, GZInfo*, std::less<std::string>, std::allocator<std::pair<std::string const, GZInfo*> > >&, std::string, int, std::string) (funseq2_DRM2Target.cpp:65)
+==1164==    by 0x40991C: main (funseq2_DRM2Target.cpp:339)
+==1164== 
+==1164== 24 bytes in 3 blocks are indirectly lost in loss record 3 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x4142EE: __gnu_cxx::new_allocator<std::string>::allocate(unsigned long, void const*) (new_allocator.h:94)
+==1164==    by 0x4113DF: std::_Vector_base<std::string, std::allocator<std::string> >::_M_allocate(unsigned long) (in /mnt/nas2/sklou/hmrf/yale_data/funseq2_drm/funseq2_DRM2Target)
+==1164==    by 0x40E604: void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) (vector.tcc:402)
+==1164==    by 0x40CDEB: std::vector<std::string, std::allocator<std::string> >::push_back(std::string const&) (stl_vector.h:891)
+==1164==    by 0x40816A: updateGZInfo(std::map<std::string, GZInfo*, std::less<std::string>, std::allocator<std::pair<std::string const, GZInfo*> > >&, std::string, int, std::string) (funseq2_DRM2Target.cpp:72)
+==1164==    by 0x4099AC: main (funseq2_DRM2Target.cpp:341)
+==1164== 
+==1164== 26 bytes in 1 blocks are still reachable in loss record 4 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x57AA998: std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57AB707: std::string::_Rep::_M_clone(std::allocator<char> const&, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57AB7EF: std::string::reserve(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57ABAB4: std::string::append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x5765834: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x41A5BF: gff::read() (gff.cpp:36)
+==1164==    by 0x40953F: main (funseq2_DRM2Target.cpp:296)
+==1164== 
+==1164== 26 bytes in 1 blocks are possibly lost in loss record 5 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x57AA998: std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57AB707: std::string::_Rep::_M_clone(std::allocator<char> const&, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57AB7EF: std::string::reserve(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57ABAB4: std::string::append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x5765834: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x41A5BF: gff::read() (gff.cpp:36)
+==1164==    by 0x40953F: main (funseq2_DRM2Target.cpp:296)
+==1164== 
+==1164== 32 bytes in 8 blocks are indirectly lost in loss record 6 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x414154: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:94)
+==1164==    by 0x4111E1: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /mnt/nas2/sklou/hmrf/yale_data/funseq2_drm/funseq2_DRM2Target)
+==1164==    by 0x40E3BE: void std::vector<int, std::allocator<int> >::_M_emplace_back_aux<int const&>(int const&) (vector.tcc:402)
+==1164==    by 0x40CD7B: std::vector<int, std::allocator<int> >::push_back(int const&) (stl_vector.h:891)
+==1164==    by 0x408153: updateGZInfo(std::map<std::string, GZInfo*, std::less<std::string>, std::allocator<std::pair<std::string const, GZInfo*> > >&, std::string, int, std::string) (funseq2_DRM2Target.cpp:71)
+==1164==    by 0x409A3C: main (funseq2_DRM2Target.cpp:343)
+==1164== 
+==1164== 48 bytes in 1 blocks are indirectly lost in loss record 7 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x417DFD: __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, Segment*> > >::allocate(unsigned long, void const*) (new_allocator.h:94)
+==1164==    by 0x41756A: std::_Rb_tree<std::string, std::pair<std::string const, Segment*>, std::_Select1st<std::pair<std::string const, Segment*> >, std::less<std::string>, std::allocator<std::pair<std::string const, Segment*> > >::_M_get_node() (stl_tree.h:369)
+==1164==    by 0x41D363: std::_Rb_tree_node<std::pair<std::string const, Segment*> >* std::_Rb_tree<std::string, std::pair<std::string const, Segment*>, std::_Select1st<std::pair<std::string const, Segment*> >, std::less<std::string>, std::allocator<std::pair<std::string const, Segment*> > >::_M_create_node<std::pair<std::string, Segment*> >(std::pair<std::string, Segment*>&&) (stl_tree.h:402)
+==1164==    by 0x41CD1E: std::_Rb_tree_iterator<std::pair<std::string const, Segment*> > std::_Rb_tree<std::string, std::pair<std::string const, Segment*>, std::_Select1st<std::pair<std::string const, Segment*> >, std::less<std::string>, std::allocator<std::pair<std::string const, Segment*> > >::_M_insert_<std::pair<std::string, Segment*> >(std::_Rb_tree_node_base const*, std::_Rb_tree_node_base const*, std::pair<std::string, Segment*>&&) (stl_tree.h:979)
+==1164==    by 0x41C22A: std::pair<std::_Rb_tree_iterator<std::pair<std::string const, Segment*> >, bool> std::_Rb_tree<std::string, std::pair<std::string const, Segment*>, std::_Select1st<std::pair<std::string const, Segment*> >, std::less<std::string>, std::allocator<std::pair<std::string const, Segment*> > >::_M_insert_unique<std::pair<std::string, Segment*> >(std::pair<std::string, Segment*>&&) (stl_tree.h:1293)
+==1164==    by 0x41BAEE: std::pair<std::_Rb_tree_iterator<std::pair<std::string const, Segment*> >, bool> std::map<std::string, Segment*, std::less<std::string>, std::allocator<std::pair<std::string const, Segment*> > >::insert<std::pair<std::string, Segment*>, void>(std::pair<std::string, Segment*>&&) (stl_map.h:531)
+==1164==    by 0x41AADF: gff::read() (gff.cpp:73)
+==1164==    by 0x40953F: main (funseq2_DRM2Target.cpp:296)
+==1164== 
+==1164== 48 bytes in 3 blocks are indirectly lost in loss record 8 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x4142EE: __gnu_cxx::new_allocator<std::string>::allocate(unsigned long, void const*) (new_allocator.h:94)
+==1164==    by 0x4113DF: std::_Vector_base<std::string, std::allocator<std::string> >::_M_allocate(unsigned long) (in /mnt/nas2/sklou/hmrf/yale_data/funseq2_drm/funseq2_DRM2Target)
+==1164==    by 0x40E604: void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) (vector.tcc:402)
+==1164==    by 0x40CDEB: std::vector<std::string, std::allocator<std::string> >::push_back(std::string const&) (stl_vector.h:891)
+==1164==    by 0x4080F5: updateGZInfo(std::map<std::string, GZInfo*, std::less<std::string>, std::allocator<std::pair<std::string const, GZInfo*> > >&, std::string, int, std::string) (funseq2_DRM2Target.cpp:66)
+==1164==    by 0x40991C: main (funseq2_DRM2Target.cpp:339)
+==1164== 
+==1164== 55 bytes in 1 blocks are possibly lost in loss record 9 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x57AA998: std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57AB707: std::string::_Rep::_M_clone(std::allocator<char> const&, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57AB7EF: std::string::reserve(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57ABAB4: std::string::append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x41A7B4: gff::read() (gff.cpp:54)
+==1164==    by 0x40953F: main (funseq2_DRM2Target.cpp:296)
+==1164== 
+==1164== 64 bytes in 8 blocks are indirectly lost in loss record 10 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x4142EE: __gnu_cxx::new_allocator<std::string>::allocate(unsigned long, void const*) (new_allocator.h:94)
+==1164==    by 0x4113DF: std::_Vector_base<std::string, std::allocator<std::string> >::_M_allocate(unsigned long) (in /mnt/nas2/sklou/hmrf/yale_data/funseq2_drm/funseq2_DRM2Target)
+==1164==    by 0x40E604: void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) (vector.tcc:402)
+==1164==    by 0x40CDEB: std::vector<std::string, std::allocator<std::string> >::push_back(std::string const&) (stl_vector.h:891)
+==1164==    by 0x40816A: updateGZInfo(std::map<std::string, GZInfo*, std::less<std::string>, std::allocator<std::pair<std::string const, GZInfo*> > >&, std::string, int, std::string) (funseq2_DRM2Target.cpp:72)
+==1164==    by 0x409A3C: main (funseq2_DRM2Target.cpp:343)
+==1164== 
+==1164== 66 bytes in 1 blocks are definitely lost in loss record 11 of 41
+==1164==    at 0x4C2A067: operator new[](unsigned long) (vg_replace_malloc.c:363)
+==1164==    by 0x409357: main (funseq2_DRM2Target.cpp:269)
+==1164== 
+==1164== 68 bytes in 17 blocks are indirectly lost in loss record 12 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x414154: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:94)
+==1164==    by 0x4111E1: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /mnt/nas2/sklou/hmrf/yale_data/funseq2_drm/funseq2_DRM2Target)
+==1164==    by 0x40E3BE: void std::vector<int, std::allocator<int> >::_M_emplace_back_aux<int const&>(int const&) (vector.tcc:402)
+==1164==    by 0x40CD7B: std::vector<int, std::allocator<int> >::push_back(int const&) (stl_vector.h:891)
+==1164==    by 0x408153: updateGZInfo(std::map<std::string, GZInfo*, std::less<std::string>, std::allocator<std::pair<std::string const, GZInfo*> > >&, std::string, int, std::string) (funseq2_DRM2Target.cpp:71)
+==1164==    by 0x40991C: main (funseq2_DRM2Target.cpp:339)
+==1164== 
+==1164== 101 bytes in 1 blocks are indirectly lost in loss record 13 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x57AA998: std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57AC384: char* std::string::_S_construct<char const*>(char const*, char const*, std::allocator<char> const&, std::forward_iterator_tag) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57AC462: std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x4094E2: main (funseq2_DRM2Target.cpp:295)
+==1164== 
+==1164== 136 bytes in 11 blocks are indirectly lost in loss record 14 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x414154: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:94)
+==1164==    by 0x4111E1: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /mnt/nas2/sklou/hmrf/yale_data/funseq2_drm/funseq2_DRM2Target)
+==1164==    by 0x40E3BE: void std::vector<int, std::allocator<int> >::_M_emplace_back_aux<int const&>(int const&) (vector.tcc:402)
+==1164==    by 0x40CD7B: std::vector<int, std::allocator<int> >::push_back(int const&) (stl_vector.h:891)
+==1164==    by 0x4080D2: updateGZInfo(std::map<std::string, GZInfo*, std::less<std::string>, std::allocator<std::pair<std::string const, GZInfo*> > >&, std::string, int, std::string) (funseq2_DRM2Target.cpp:65)
+==1164==    by 0x409A3C: main (funseq2_DRM2Target.cpp:343)
+==1164== 
+==1164== 136 bytes in 17 blocks are indirectly lost in loss record 15 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x4142EE: __gnu_cxx::new_allocator<std::string>::allocate(unsigned long, void const*) (new_allocator.h:94)
+==1164==    by 0x4113DF: std::_Vector_base<std::string, std::allocator<std::string> >::_M_allocate(unsigned long) (in /mnt/nas2/sklou/hmrf/yale_data/funseq2_drm/funseq2_DRM2Target)
+==1164==    by 0x40E604: void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) (vector.tcc:402)
+==1164==    by 0x40CDEB: std::vector<std::string, std::allocator<std::string> >::push_back(std::string const&) (stl_vector.h:891)
+==1164==    by 0x40816A: updateGZInfo(std::map<std::string, GZInfo*, std::less<std::string>, std::allocator<std::pair<std::string const, GZInfo*> > >&, std::string, int, std::string) (funseq2_DRM2Target.cpp:72)
+==1164==    by 0x40991C: main (funseq2_DRM2Target.cpp:339)
+==1164== 
+==1164== 152 bytes in 16 blocks are indirectly lost in loss record 16 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x414154: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:94)
+==1164==    by 0x4111E1: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /mnt/nas2/sklou/hmrf/yale_data/funseq2_drm/funseq2_DRM2Target)
+==1164==    by 0x40E3BE: void std::vector<int, std::allocator<int> >::_M_emplace_back_aux<int const&>(int const&) (vector.tcc:402)
+==1164==    by 0x40CD7B: std::vector<int, std::allocator<int> >::push_back(int const&) (stl_vector.h:891)
+==1164==    by 0x4080D2: updateGZInfo(std::map<std::string, GZInfo*, std::less<std::string>, std::allocator<std::pair<std::string const, GZInfo*> > >&, std::string, int, std::string) (funseq2_DRM2Target.cpp:65)
+==1164==    by 0x4099AC: main (funseq2_DRM2Target.cpp:341)
+==1164== 
+==1164== 272 bytes in 11 blocks are indirectly lost in loss record 17 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x4142EE: __gnu_cxx::new_allocator<std::string>::allocate(unsigned long, void const*) (new_allocator.h:94)
+==1164==    by 0x4113DF: std::_Vector_base<std::string, std::allocator<std::string> >::_M_allocate(unsigned long) (in /mnt/nas2/sklou/hmrf/yale_data/funseq2_drm/funseq2_DRM2Target)
+==1164==    by 0x40E604: void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) (vector.tcc:402)
+==1164==    by 0x40CDEB: std::vector<std::string, std::allocator<std::string> >::push_back(std::string const&) (stl_vector.h:891)
+==1164==    by 0x4080F5: updateGZInfo(std::map<std::string, GZInfo*, std::less<std::string>, std::allocator<std::pair<std::string const, GZInfo*> > >&, std::string, int, std::string) (funseq2_DRM2Target.cpp:66)
+==1164==    by 0x409A3C: main (funseq2_DRM2Target.cpp:343)
+==1164== 
+==1164== 304 bytes in 16 blocks are indirectly lost in loss record 18 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x4142EE: __gnu_cxx::new_allocator<std::string>::allocate(unsigned long, void const*) (new_allocator.h:94)
+==1164==    by 0x4113DF: std::_Vector_base<std::string, std::allocator<std::string> >::_M_allocate(unsigned long) (in /mnt/nas2/sklou/hmrf/yale_data/funseq2_drm/funseq2_DRM2Target)
+==1164==    by 0x40E604: void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) (vector.tcc:402)
+==1164==    by 0x40CDEB: std::vector<std::string, std::allocator<std::string> >::push_back(std::string const&) (stl_vector.h:891)
+==1164==    by 0x4080F5: updateGZInfo(std::map<std::string, GZInfo*, std::less<std::string>, std::allocator<std::pair<std::string const, GZInfo*> > >&, std::string, int, std::string) (funseq2_DRM2Target.cpp:66)
+==1164==    by 0x4099AC: main (funseq2_DRM2Target.cpp:341)
+==1164== 
+==1164== 568 bytes in 1 blocks are still reachable in loss record 19 of 41
+==1164==    at 0x4C2935B: malloc (vg_replace_malloc.c:270)
+==1164==    by 0x5F7196A: __fopen_internal (iofopen.c:73)
+==1164==    by 0x41E057: getVM() (vmstat.cpp:34)
+==1164==    by 0x40A096: main (funseq2_DRM2Target.cpp:395)
+==1164== 
+==1164== 568 bytes in 1 blocks are still reachable in loss record 20 of 41
+==1164==    at 0x4C2935B: malloc (vg_replace_malloc.c:270)
+==1164==    by 0x5F7196A: __fopen_internal (iofopen.c:73)
+==1164==    by 0x41E057: getVM() (vmstat.cpp:34)
+==1164==    by 0x40A32A: main (funseq2_DRM2Target.cpp:411)
+==1164== 
+==1164== 568 bytes in 1 blocks are still reachable in loss record 21 of 41
+==1164==    at 0x4C2935B: malloc (vg_replace_malloc.c:270)
+==1164==    by 0x5F7196A: __fopen_internal (iofopen.c:73)
+==1164==    by 0x41E057: getVM() (vmstat.cpp:34)
+==1164==    by 0x40BBC1: main (funseq2_DRM2Target.cpp:557)
+==1164== 
+==1164== 800 bytes in 25 blocks are indirectly lost in loss record 22 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x57AA998: std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57AAB92: std::string::_M_mutate(unsigned long, unsigned long, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57AAD2B: std::string::_M_replace_safe(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x41AAA8: gff::read() (gff.cpp:72)
+==1164==    by 0x40953F: main (funseq2_DRM2Target.cpp:296)
+==1164== 
+==1164== 1,152 bytes in 24 blocks are indirectly lost in loss record 23 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x417DFD: __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, Segment*> > >::allocate(unsigned long, void const*) (new_allocator.h:94)
+==1164==    by 0x41756A: std::_Rb_tree<std::string, std::pair<std::string const, Segment*>, std::_Select1st<std::pair<std::string const, Segment*> >, std::less<std::string>, std::allocator<std::pair<std::string const, Segment*> > >::_M_get_node() (stl_tree.h:369)
+==1164==    by 0x41D363: std::_Rb_tree_node<std::pair<std::string const, Segment*> >* std::_Rb_tree<std::string, std::pair<std::string const, Segment*>, std::_Select1st<std::pair<std::string const, Segment*> >, std::less<std::string>, std::allocator<std::pair<std::string const, Segment*> > >::_M_create_node<std::pair<std::string, Segment*> >(std::pair<std::string, Segment*>&&) (stl_tree.h:402)
+==1164==    by 0x41CD1E: std::_Rb_tree_iterator<std::pair<std::string const, Segment*> > std::_Rb_tree<std::string, std::pair<std::string const, Segment*>, std::_Select1st<std::pair<std::string const, Segment*> >, std::less<std::string>, std::allocator<std::pair<std::string const, Segment*> > >::_M_insert_<std::pair<std::string, Segment*> >(std::_Rb_tree_node_base const*, std::_Rb_tree_node_base const*, std::pair<std::string, Segment*>&&) (stl_tree.h:979)
+==1164==    by 0x41C2EC: std::pair<std::_Rb_tree_iterator<std::pair<std::string const, Segment*> >, bool> std::_Rb_tree<std::string, std::pair<std::string const, Segment*>, std::_Select1st<std::pair<std::string const, Segment*> >, std::less<std::string>, std::allocator<std::pair<std::string const, Segment*> > >::_M_insert_unique<std::pair<std::string, Segment*> >(std::pair<std::string, Segment*>&&) (stl_tree.h:1299)
+==1164==    by 0x41BAEE: std::pair<std::_Rb_tree_iterator<std::pair<std::string const, Segment*> >, bool> std::map<std::string, Segment*, std::less<std::string>, std::allocator<std::pair<std::string const, Segment*> > >::insert<std::pair<std::string, Segment*>, void>(std::pair<std::string, Segment*>&&) (stl_map.h:531)
+==1164==    by 0x41AADF: gff::read() (gff.cpp:73)
+==1164==    by 0x40953F: main (funseq2_DRM2Target.cpp:296)
+==1164== 
+==1164== 3,944 (1,120 direct, 2,824 indirect) bytes in 20 blocks are definitely lost in loss record 24 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x408104: updateGZInfo(std::map<std::string, GZInfo*, std::less<std::string>, std::allocator<std::pair<std::string const, GZInfo*> > >&, std::string, int, std::string) (funseq2_DRM2Target.cpp:69)
+==1164==    by 0x40991C: main (funseq2_DRM2Target.cpp:339)
+==1164== 
+==1164== 4,600 bytes in 25 blocks are indirectly lost in loss record 25 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x41A984: gff::read() (gff.cpp:66)
+==1164==    by 0x40953F: main (funseq2_DRM2Target.cpp:296)
+==1164== 
+==1164== 4,934 (1,064 direct, 3,870 indirect) bytes in 19 blocks are definitely lost in loss record 26 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x408104: updateGZInfo(std::map<std::string, GZInfo*, std::less<std::string>, std::allocator<std::pair<std::string const, GZInfo*> > >&, std::string, int, std::string) (funseq2_DRM2Target.cpp:69)
+==1164==    by 0x409A3C: main (funseq2_DRM2Target.cpp:343)
+==1164== 
+==1164== 5,325 (1,064 direct, 4,261 indirect) bytes in 19 blocks are definitely lost in loss record 27 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x408104: updateGZInfo(std::map<std::string, GZInfo*, std::less<std::string>, std::allocator<std::pair<std::string const, GZInfo*> > >&, std::string, int, std::string) (funseq2_DRM2Target.cpp:69)
+==1164==    by 0x4099AC: main (funseq2_DRM2Target.cpp:341)
+==1164== 
+==1164== 9,683 bytes in 155 blocks are indirectly lost in loss record 28 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x57AA998: std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57AB707: std::string::_Rep::_M_clone(std::allocator<char> const&, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57AB7EF: std::string::reserve(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57ABAB4: std::string::append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x5765834: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x4097EB: main (funseq2_DRM2Target.cpp:330)
+==1164== 
+==1164== 20,145 bytes in 237 blocks are indirectly lost in loss record 29 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x57AA998: std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57AB707: std::string::_Rep::_M_clone(std::allocator<char> const&, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57AB7EF: std::string::reserve(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57ABCE5: std::string::append(std::string const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x41A7C3: gff::read() (gff.cpp:54)
+==1164==    by 0x40953F: main (funseq2_DRM2Target.cpp:296)
+==1164== 
+==1164== 34,765 bytes in 409 blocks are indirectly lost in loss record 30 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x57AA998: std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57AB707: std::string::_Rep::_M_clone(std::allocator<char> const&, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57AB7EF: std::string::reserve(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57ABAB4: std::string::append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x41A7D0: gff::read() (gff.cpp:54)
+==1164==    by 0x40953F: main (funseq2_DRM2Target.cpp:296)
+==1164== 
+==1164== 196,605 bytes in 2,313 blocks are indirectly lost in loss record 31 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x57AA998: std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57AB707: std::string::_Rep::_M_clone(std::allocator<char> const&, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57AB7EF: std::string::reserve(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57ABCE5: std::string::append(std::string const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x41A7F3: gff::read() (gff.cpp:54)
+==1164==    by 0x40953F: main (funseq2_DRM2Target.cpp:296)
+==1164== 
+==1164== 770,304 bytes in 25 blocks are indirectly lost in loss record 32 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x414154: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:94)
+==1164==    by 0x4111E1: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /mnt/nas2/sklou/hmrf/yale_data/funseq2_drm/funseq2_DRM2Target)
+==1164==    by 0x41CA78: void std::vector<int, std::allocator<int> >::_M_emplace_back_aux<int>(int&&) (vector.tcc:402)
+==1164==    by 0x41C021: void std::vector<int, std::allocator<int> >::emplace_back<int>(int&&) (vector.tcc:102)
+==1164==    by 0x41BAA2: std::vector<int, std::allocator<int> >::push_back(int&&) (stl_vector.h:900)
+==1164==    by 0x41A8C6: gff::read() (gff.cpp:60)
+==1164==    by 0x40953F: main (funseq2_DRM2Target.cpp:296)
+==1164== 
+==1164== 770,304 bytes in 25 blocks are indirectly lost in loss record 33 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x414154: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:94)
+==1164==    by 0x4111E1: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /mnt/nas2/sklou/hmrf/yale_data/funseq2_drm/funseq2_DRM2Target)
+==1164==    by 0x41CA78: void std::vector<int, std::allocator<int> >::_M_emplace_back_aux<int>(int&&) (vector.tcc:402)
+==1164==    by 0x41C021: void std::vector<int, std::allocator<int> >::emplace_back<int>(int&&) (vector.tcc:102)
+==1164==    by 0x41BAA2: std::vector<int, std::allocator<int> >::push_back(int&&) (stl_vector.h:900)
+==1164==    by 0x41A913: gff::read() (gff.cpp:61)
+==1164==    by 0x40953F: main (funseq2_DRM2Target.cpp:296)
+==1164== 
+==1164== 1,000,365 bytes in 11,769 blocks are indirectly lost in loss record 34 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x57AA998: std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57AB707: std::string::_Rep::_M_clone(std::allocator<char> const&, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57AB7EF: std::string::reserve(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57ABAB4: std::string::append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x41A7E8: gff::read() (gff.cpp:54)
+==1164==    by 0x40953F: main (funseq2_DRM2Target.cpp:296)
+==1164== 
+==1164== 1,492,175 bytes in 17,555 blocks are indirectly lost in loss record 35 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x57AA998: std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57AB707: std::string::_Rep::_M_clone(std::allocator<char> const&, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57AB7EF: std::string::reserve(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57ABCE5: std::string::append(std::string const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x41A7DB: gff::read() (gff.cpp:54)
+==1164==    by 0x40953F: main (funseq2_DRM2Target.cpp:296)
+==1164== 
+==1164== 1,540,608 bytes in 25 blocks are indirectly lost in loss record 36 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x4142EE: __gnu_cxx::new_allocator<std::string>::allocate(unsigned long, void const*) (new_allocator.h:94)
+==1164==    by 0x4113DF: std::_Vector_base<std::string, std::allocator<std::string> >::_M_allocate(unsigned long) (in /mnt/nas2/sklou/hmrf/yale_data/funseq2_drm/funseq2_DRM2Target)
+==1164==    by 0x40E604: void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) (vector.tcc:402)
+==1164==    by 0x40CDEB: std::vector<std::string, std::allocator<std::string> >::push_back(std::string const&) (stl_vector.h:891)
+==1164==    by 0x41A93C: gff::read() (gff.cpp:62)
+==1164==    by 0x40953F: main (funseq2_DRM2Target.cpp:296)
+==1164== 
+==1164== 1,540,608 bytes in 25 blocks are indirectly lost in loss record 37 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x4142EE: __gnu_cxx::new_allocator<std::string>::allocate(unsigned long, void const*) (new_allocator.h:94)
+==1164==    by 0x4113DF: std::_Vector_base<std::string, std::allocator<std::string> >::_M_allocate(unsigned long) (in /mnt/nas2/sklou/hmrf/yale_data/funseq2_drm/funseq2_DRM2Target)
+==1164==    by 0x40E604: void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) (vector.tcc:402)
+==1164==    by 0x40CDEB: std::vector<std::string, std::allocator<std::string> >::push_back(std::string const&) (stl_vector.h:891)
+==1164==    by 0x41A975: gff::read() (gff.cpp:63)
+==1164==    by 0x40953F: main (funseq2_DRM2Target.cpp:296)
+==1164== 
+==1164== 2,020,964 bytes in 1 blocks are still reachable in loss record 38 of 41
+==1164==    at 0x4C2B514: calloc (vg_replace_malloc.c:593)
+==1164==    by 0x5FF09BE: monstartup (gmon.c:134)
+==1164==    by 0x40755C: __gmon_start__ (in /mnt/nas2/sklou/hmrf/yale_data/funseq2_drm/funseq2_DRM2Target)
+==1164==    by 0x7B86DB4: ??? (in /lib/x86_64-linux-gnu/libdl-2.17.so)
+==1164==    by 0x7FEFFFE67: ???
+==1164==    by 0x400E9A1: call_init (dl-init.c:69)
+==1164==    by 0x400EAC9: _dl_init (dl-init.c:133)
+==1164==    by 0x4001539: ??? (in /lib/x86_64-linux-gnu/ld-2.17.so)
+==1164==    by 0xE: ???
+==1164==    by 0x7FF000132: ???
+==1164==    by 0x7FF000147: ???
+==1164==    by 0x7FF00014A: ???
+==1164== 
+==1164== 3,587,594 bytes in 137,981 blocks are indirectly lost in loss record 39 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x57AA998: std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57AB707: std::string::_Rep::_M_clone(std::allocator<char> const&, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57AB7EF: std::string::reserve(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57ABAB4: std::string::append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x5765834: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x41A5BF: gff::read() (gff.cpp:36)
+==1164==    by 0x40953F: main (funseq2_DRM2Target.cpp:296)
+==1164== 
+==1164== 5,812,070 bytes in 105,674 blocks are indirectly lost in loss record 40 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x57AA998: std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57AB707: std::string::_Rep::_M_clone(std::allocator<char> const&, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57AB7EF: std::string::reserve(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x57ABAB4: std::string::append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17)
+==1164==    by 0x41A7B4: gff::read() (gff.cpp:54)
+==1164==    by 0x40953F: main (funseq2_DRM2Target.cpp:296)
+==1164== 
+==1164== 16,772,308 (64 direct, 16,772,244 indirect) bytes in 1 blocks are definitely lost in loss record 41 of 41
+==1164==    at 0x4C298F9: operator new(unsigned long) (vg_replace_malloc.c:298)
+==1164==    by 0x4094F3: main (funseq2_DRM2Target.cpp:295)
+==1164== 
+==1164== LEAK SUMMARY:
+==1164==    definitely lost: 3,378 bytes in 60 blocks
+==1164==    indirectly lost: 16,783,199 bytes in 276,385 blocks
+==1164==      possibly lost: 81 bytes in 2 blocks
+==1164==    still reachable: 2,022,694 bytes in 5 blocks
+==1164==         suppressed: 0 bytes in 0 blocks
+==1164== 
+==1164== For counts of detected and suppressed errors, rerun with: -v
+==1164== ERROR SUMMARY: 209 errors from 26 contexts (suppressed: 2 from 2)
